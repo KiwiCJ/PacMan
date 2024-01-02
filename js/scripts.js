@@ -46,7 +46,7 @@ function createGrid() {
     
     for (let i = 0; i < cellCount; i++) {
     const cell = document.createElement('div')
-    //cell.innerText = i // remove this to remove numbers from grid 
+    //cell.innerText = i 
     cell.dataset.index = i 
     cell.style.height = `${100 / height}%`
     cell.style.width = `${100 / width}%`
@@ -320,7 +320,7 @@ function resetGame() {
 
     grid.innerHTML = ''
 
-    init()
+    createGrid()
 }
 
 
