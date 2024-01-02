@@ -1,0 +1,97 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: darkslategray;
+    
+}
+
+.board {
+    height: 150vh;
+    display: flex;
+    border: 0;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2vmin;
+}
+
+.scoreBoard {
+    color: white;
+    font-size: 20px;
+    margin-right: 20px;
+}
+
+.grid-container {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 0;
+}
+
+.grid {
+    align-items: center;
+    align-content: center;
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.2);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 600px;
+    width: 600px;
+    margin-top: 1vmin; 
+    background-color: darkslategray; 
+} 
+
+.grid .edge {
+    background-color: darkblue;
+}
+
+.grid .pacman {
+    background-image: url('../img/pacman.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.grid .ghost-red {
+    background-image: url('../img/redghost.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.grid .ghost-blue {
+    background-image: url('../img/blueghost.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.grid .ghost-green {
+    background-image: url('../img/greenghost.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.grid .ghost-yellow {
+    background-image: url('../img/yellowghost.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.dot {
+    background-image: url('../img/dot.png');
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center;
+    width: 10px;
+    height: 10px;
+}
+
